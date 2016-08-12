@@ -5,7 +5,6 @@
 - need express-generator
 - there is a folder would be created named nodejs-hello-again
 
-<!--  -->
     npm install express-generator -g
     express nodejs-hello-again
 
