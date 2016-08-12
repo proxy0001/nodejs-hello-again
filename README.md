@@ -117,3 +117,20 @@ curl test code
     curl -i -X POST http://localhost:3000/1/post -d "title=my title&content=my content"
     curl -i -X PUT http://localhost:3000/1/post/myid
     curl -i -X DELETE http://localhost:3000/1/post/myid
+
+## create model
+
+use object to save post data  
+create post proto
+
+update routes/index.js
+<!-- code block --> 
+    var posts = {};
+    var postProto = {
+      id: '',
+      title: '',
+      body: '',
+      user: {
+        login: 'proxy0001'
+      }
+    };
