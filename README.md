@@ -28,3 +28,9 @@ there is a folder would be created named nodejs-hello-again
 
 <!-- code block -->
     npm install
+
+## test run
+use nodemon[https://www.npmjs.com/package/nodemon]
+<!-- code block -->
+    nodemon start
+
