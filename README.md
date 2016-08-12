@@ -125,7 +125,7 @@ curl test code
 - create a function to generate unique id 
 - create functions for CURD (create, read, update, delete)
 
-use [crypto](https://nodejs.org/api/crypto.html)
+use [crypto](https://nodejs.org/api/crypto.html)  
 use _extend function in [util](https://nodejs.org/api/util.html) to clone object
 
 // routes/index.js
