@@ -43,7 +43,7 @@ use [nodemon](https://www.npmjs.com/package/nodemon)
 | PUT | /1/post/:id | 修改指定資訊
 | DELETE | /1/post/:id | 刪除指定文章
 
-update routes/index.js
+//routes/index.js
 <!-- code block -->
     // get all posts
     router.get('/1/post', function(req, res, next) {
@@ -83,7 +83,7 @@ use [Postman](http://www.getpostman.com/) OR [curl](https://developer.apple.com/
 1. req.params: url variable
 2. req.body: http paramaters
 
-update routes/index.js
+//routes/index.js
 <!-- code block -->
     // get all posts
     router.get('/1/post', function(req, res, next) {
@@ -123,7 +123,7 @@ curl test code
 use object to save post data  
 create post proto
 
-update routes/index.js
+//routes/index.js
 <!-- code block --> 
     var posts = {};
     var postProto = {
@@ -133,4 +133,27 @@ update routes/index.js
       user: {
         login: 'proxy0001'
       }
+    };
+
+## create unit id
+
+use [crypto](https://nodejs.org/api/crypto.html)    
+
+//routes/index.js
+<!-- code block --> 
+    var createId = function createId (str) {
+      var data = (+new Date + Math.floor( Math.random() * 999999 ) + str);
+      var id = crypto.createHmac('md5', 'xyz').update(data).digest('hex');
+      return id;
+    };
+
+## use postProto to create a new post data
+
+use _extend function in [util](https://nodejs.org/api/util.html) to clone object
+
+//routes/index.js
+<!-- code block --> 
+    var createPost = function createPost (o) {
+      o.id = createId(o.body);
+      return extend(postProto, o);
     };
