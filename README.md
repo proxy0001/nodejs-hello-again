@@ -70,7 +70,6 @@ update routes/index.js
 use [Postman](http://www.getpostman.com/) OR [curl](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html)  
 
 [How to test a REST api from command line with curl](http://www.codingpedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/)  
-
 [使用curl指令測試REST服務](http://blog.kent-chiu.com/2013/08/14/testing-rest-with-curl-command.html)
 
 <!-- code block -->
