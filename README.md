@@ -2,11 +2,10 @@
 
 ## create a default project by express-generator
 
-need express-generator  
+use [express-generator](https://www.npmjs.com/package/express-generator)  
 there is a folder would be created named nodejs-hello-again
 
 <!-- code block -->
-    npm install express-generator -g
     express nodejs-hello-again
 
 ## open the folder
