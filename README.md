@@ -30,7 +30,7 @@ there is a folder would be created named nodejs-hello-again
     npm install
 
 ## test run
-use nodemon[https://www.npmjs.com/package/nodemon]
+use [nodemon](https://www.npmjs.com/package/nodemon)
 <!-- code block -->
     nodemon start
 
