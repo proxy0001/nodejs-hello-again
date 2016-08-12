@@ -1,4 +1,4 @@
-#step by step
+#step log
 
 ## create a default project by express-generator
 
