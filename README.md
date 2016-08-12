@@ -1,6 +1,6 @@
 #step log
 
-## create a default project by express-generator
+## create a default project
 
 use [express-generator](https://www.npmjs.com/package/express-generator)  
 there is a folder would be created named nodejs-hello-again
@@ -8,7 +8,7 @@ there is a folder would be created named nodejs-hello-again
 <!-- code block -->
     express nodejs-hello-again
 
-## open the folder
+## go to project folder
 
 <!-- code block -->    
     cd nodejs-hello-again
