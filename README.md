@@ -28,7 +28,7 @@ there is a folder would be created named nodejs-hello-again
 <!-- code block -->
     npm install
 
-## test run
+## test run on localhost:3000
 use [nodemon](https://www.npmjs.com/package/nodemon)
 <!-- code block -->
     nodemon start
@@ -48,28 +48,31 @@ update routes/index.js
  
     // get all posts
     router.get('/1/post', function(req, res, next) {
-      console.log('get all posts');
       res.send('get all posts');
     });
     // get post by id
     router.get('/1/post/:id', function(req, res, next) {
-      console.log('get post by id');
       res.send('get post by id');
     });
     // new post
     router.post('/1/post', function(req, res, next) {
-      console.log('new post');
       res.send('new post');
     });
     // modify post
     router.put('/1/post/:id', function(req, res, next) {
-      console.log('modify post');
       res.send('modify post');
     });
     // remove post
     router.delete('/1/post', function(req, res, next) {
-      console.log('remove post');
       res.send('remove post');
     });
    
+## test api
+use [Postman](http://www.getpostman.com/) OR  
+use [cURL](http://www.codingpedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/)
 
+<!-- code block -->
+    curl -i -X GET http://localhost:3000/1/post
+    curl -i -X POST http://localhost:3000/1/post
+    curl -i -X PUT http://localhost:3000/1/post
+    curl -i -X DELETE http://localhost:3000/1/post
